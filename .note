@@ -1,0 +1,58 @@
+/my-movie-booking-app
+├── backend
+│   ├── config
+│   │   └── db.js                   # Database connection setup
+│   ├── controllers
+│   │   ├── authController.js       # User authentication logic
+│   │   ├── bookingController.js    # Booking management logic
+│   │   ├── seatController.js       # Seat management logic
+│   │   └── adminController.js      # Admin functionalities
+│   ├── models
+│   │   ├── User.js                 # User model schema
+│   │   ├── Movie.js                # Movie model schema
+│   │   ├── Booking.js              # Booking model schema
+│   │   ├── Seat.js                 # Seat model schema
+│   │   └── Food.js                 # Food model schema (if implementing food ordering)
+│   ├── routes
+│   │   ├── authRoutes.js           # User authentication routes
+│   │   ├── bookingRoutes.js        # Booking management routes
+│   │   ├── seatRoutes.js           # Seat management routes
+│   │   └── adminRoutes.js          # Admin routes
+│   ├── middlewares
+│   │   ├── authMiddleware.js       # Middleware for authentication
+│   │   └── errorMiddleware.js      # Error handling middleware
+│   ├── utils
+│   │   ├── emailService.js         # Email notification service
+│   │   └── paymentGateway.js       # Payment gateway integration
+│   ├── server.js                   # Server setup and initialization
+│   └── .env                        # Environment variables
+├── frontend
+│   ├── public
+│   │   └── index.html              # Main HTML file
+│   ├── src
+│   │   ├── components
+│   │   │   ├── Auth
+│   │   │   │   ├── Login.js        # Login component
+│   │   │   │   └── Register.js     # Registration component
+│   │   │   ├── Booking
+│   │   │   │   ├── MovieList.js    # Movie list component
+│   │   │   │   ├── SeatSelection.js# Seat selection component
+│   │   │   │   └── Payment.js      # Payment component
+│   │   │   ├── Admin
+│   │   │   │   ├── ManageMovies.js # Admin movie management component
+│   │   │   │   ├── ManageSeats.js  # Admin seat management component
+│   │   │   │   └── ManageBookings.js # Admin booking management component
+│   │   ├── pages
+│   │   │   ├── Home.js             # Home page component
+│   │   │   └── AdminDashboard.js   # Admin dashboard component
+│   │   ├── services
+│   │   │   ├── authService.js      # Service for auth API calls
+│   │   │   ├── bookingService.js   # Service for booking API calls
+│   │   │   └── adminService.js     # Service for admin API calls
+│   │   ├── App.js                  # Main App component
+│   │   ├── index.js                # Entry point for React
+│   │   └── styles.css              # Global CSS styles
+│   └── package.json                # Frontend dependencies and scripts
+├── README.md                       # Project documentation
+├── .gitignore                      # Git ignore file
+└── package.json                    # Backend dependencies and scripts
